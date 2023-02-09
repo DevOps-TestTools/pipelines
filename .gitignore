@@ -1,25 +1,64 @@
-#Learn more about Jenkins and JENKINS_HOME directory for which this file is intended.
-#  http://jenkins-ci.org/
-#  https://wiki.jenkins-ci.org/display/JENKINS/Administering+Jenkins
+# Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,linux,windows
 
-#ignore all JENKINS_HOME except jobs directory, root xml config, and .gitignore file
-/*
-!/jobs
-!/.gitignore
-!/*.xml
+### Linux ###
+*~
 
-#ignore all files in jobs subdirectories except for folders
-#note: git doesn't track folders, only file content
-jobs/**
-!jobs/**/
+# temporary files which can be created if a process still has a handle open of a deleted file
+.fuse_hidden*
 
-#uncomment the following line to save next build numbers with config
-#!jobs/**/nextBuildNumber
+# KDE directory preferences
+.directory
 
-#exclude only config.xml files in repository subdirectories
-!config.xml
+# Linux trash folder which might appear on any partition or disk
+.Trash-*
 
-#don't track workspaces (when users build on the master)
-jobs/**/*workspace
+# .nfs files are created when an open file is removed but is still being accessed
+.nfs*
 
-#as a result only settings and job config.xml files in JENKINS_HOME will be tracked by git
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,linux,windows
